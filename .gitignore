@@ -17,5 +17,15 @@ gradle-app.setting
 # Eclipse Gradle plugin generated files
 # Eclipse Core
 .project
+
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+*.iml
+.gradle
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+local.properties

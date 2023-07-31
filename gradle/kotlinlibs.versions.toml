@@ -1,0 +1,256 @@
+[versions]
+compose-kotlin-extension = "1.4.8"
+csv = "0.0.13"
+jetbrains-kotlin-jvm = "1.8.20"
+# Plugins
+kotlin-plugin = "1.8.22"
+kotlinx-cli = "0.3.5"
+kotlinx-collections-immutable = "0.3.5"
+kotlinx-coroutines = "1.7.1"
+kotlinx-coroutines-debug = "1.4.0"
+kotlinx-coroutines-io = "0.24.0"
+kotlinx-datetime = "0.4.0"
+kotlinx-deeplearning-api = "0.5.2"
+kotlinx-html = "0.8.1"
+kotlinx-html-common = "0.7.3"
+kotlinx-io = "0.1.16"
+kotlinx-multik = "0.2.2"
+kotlinx-multik-api = "0.1.1"
+kotlinx-serialization = "1.5.1"
+msg-pack = "0.5.5"
+# Third-party libraries versions
+xmlutil = "0.86.0"
+yamlkt = "0.13.0"
+
+[libraries]
+kotlinx-cli-core = { module = "org.jetbrains.kotlinx:kotlinx-cli", version.ref = "kotlinx-cli" }
+kotlinx-cli-js = { module = "org.jetbrains.kotlinx:kotlinx-cli-js", version.ref = "kotlinx-cli" }
+kotlinx-cli-jvm = { module = "org.jetbrains.kotlinx:kotlinx-cli-jvm", version.ref = "kotlinx-cli" }
+kotlinx-cli-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-cli-linuxx64", version.ref = "kotlinx-cli" }
+kotlinx-cli-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-cli-macosarm64", version.ref = "kotlinx-cli" }
+kotlinx-cli-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-cli-macosx64", version.ref = "kotlinx-cli" }
+kotlinx-cli-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-cli-mingwx64", version.ref = "kotlinx-cli" }
+kotlinx-collections-immutable-core = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-js = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-js", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-mingwx64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-tvosarm64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-tvossimulatorarm64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-tvosx64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-watchosarm64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-watchossimulatorarm64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-collections-immutable-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable-watchosx64", version.ref = "kotlinx-collections-immutable" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-common = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-common", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-debug = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-debug", version.ref = "kotlinx-coroutines-debug" }
+kotlinx-coroutines-io = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-io", version.ref = "kotlinx-coroutines-io" }
+kotlinx-coroutines-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-iosarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-iossimulatorarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-iosx64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-js = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-js", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jvm = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-linuxx64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-macosarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-macosx64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-mingwx64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-native = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-native", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-reactive = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactive", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-reactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-tvossimulatorarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-tvosx64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-watchossimulatorarm64", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-watchosx64", version.ref = "kotlinx-coroutines" }
+kotlinx-datetime-core = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-iosarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-iossimulatorarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-iosx64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-js = { module = "org.jetbrains.kotlinx:kotlinx-datetime-js", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-jvm = { module = "org.jetbrains.kotlinx:kotlinx-datetime-jvm", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-linuxx64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-macosarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-macosx64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-mingwx64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-tvosarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-tvossimulatorarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-tvosx64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-watchosarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-watchossimulatorarm64", version.ref = "kotlinx-datetime" }
+kotlinx-datetime-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-datetime-watchosx64", version.ref = "kotlinx-datetime" }
+kotlinx-deeplearning-api = { module = "org.jetbrains.kotlinx:kotlin-deeplearning-api", version.ref = "kotlinx-deeplearning-api" }
+kotlinx-deeplearning-dataset = { module = "org.jetbrains.kotlinx:kotlin-deeplearning-dataset", version.ref = "kotlinx-deeplearning-api" }
+kotlinx-deeplearning-onnx = { module = "org.jetbrains.kotlinx:kotlin-deeplearning-onnx", version.ref = "kotlinx-deeplearning-api" }
+kotlinx-deeplearning-tensorflow = { module = "org.jetbrains.kotlinx:kotlin-deeplearning-tensorflow", version.ref = "kotlinx-deeplearning-api" }
+kotlinx-deeplearning-visualization = { module = "org.jetbrains.kotlinx:kotlin-deeplearning-visualization", version.ref = "kotlinx-deeplearning-api" }
+kotlinx-html-common = { module = "org.jetbrains.kotlinx:kotlinx-html-common", version.ref = "kotlinx-html-common" }
+kotlinx-html-core = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlinx-html" }
+kotlinx-html-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-iosarm64", version.ref = "kotlinx-html" }
+kotlinx-html-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-iossimulatorarm64", version.ref = "kotlinx-html" }
+kotlinx-html-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-iosx64", version.ref = "kotlinx-html" }
+kotlinx-html-js = { module = "org.jetbrains.kotlinx:kotlinx-html-js", version.ref = "kotlinx-html" }
+kotlinx-html-jvm = { module = "org.jetbrains.kotlinx:kotlinx-html-jvm", version.ref = "kotlinx-html" }
+kotlinx-html-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-linuxx64", version.ref = "kotlinx-html" }
+kotlinx-html-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-macosarm64", version.ref = "kotlinx-html" }
+kotlinx-html-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-macosx64", version.ref = "kotlinx-html" }
+kotlinx-html-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-mingwx64", version.ref = "kotlinx-html" }
+kotlinx-html-native = { module = "org.jetbrains.kotlinx:kotlinx-html-native", version.ref = "kotlinx-html" }
+kotlinx-html-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-tvosarm64", version.ref = "kotlinx-html" }
+kotlinx-html-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-tvossimulatorarm64", version.ref = "kotlinx-html" }
+kotlinx-html-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-tvosx64", version.ref = "kotlinx-html" }
+kotlinx-html-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-watchosarm64", version.ref = "kotlinx-html" }
+kotlinx-html-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-html-watchossimulatorarm64", version.ref = "kotlinx-html" }
+kotlinx-html-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-html-watchosx64", version.ref = "kotlinx-html" }
+kotlinx-io-core-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinx-io" }
+kotlinx-io-core-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-iosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-iossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-iosx64", version.ref = "kotlinx-io" }
+kotlinx-io-core-js = { module = "org.jetbrains.kotlinx:kotlinx-io-core-js", version.ref = "kotlinx-io" }
+kotlinx-io-core-jvm = { module = "org.jetbrains.kotlinx:kotlinx-io-core-jvm", version.ref = "kotlinx-io" }
+kotlinx-io-core-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-linuxx64", version.ref = "kotlinx-io" }
+kotlinx-io-core-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-macosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-macosx64", version.ref = "kotlinx-io" }
+kotlinx-io-core-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-mingwx64", version.ref = "kotlinx-io" }
+kotlinx-io-core-native = { module = "org.jetbrains.kotlinx:kotlinx-io-core-native", version.ref = "kotlinx-io" }
+kotlinx-io-core-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-tvosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-tvossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-tvosx64", version.ref = "kotlinx-io" }
+kotlinx-io-core-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-watchosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-watchossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-core-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-core-watchosx64", version.ref = "kotlinx-io" }
+kotlinx-io-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-iosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-iossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-iosx64", version.ref = "kotlinx-io" }
+kotlinx-io-js = { module = "org.jetbrains.kotlinx:kotlinx-io-js", version.ref = "kotlinx-io" }
+kotlinx-io-jvm = { module = "org.jetbrains.kotlinx:kotlinx-io-jvm", version.ref = "kotlinx-io" }
+kotlinx-io-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-linuxx64", version.ref = "kotlinx-io" }
+kotlinx-io-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-macosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-macosx64", version.ref = "kotlinx-io" }
+kotlinx-io-native = { module = "org.jetbrains.kotlinx:kotlinx-io-native", version.ref = "kotlinx-io" }
+kotlinx-io-runtime = { module = "org.jetbrains.kotlinx:kotlinx-io", version.ref = "kotlinx-io" }
+kotlinx-io-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-tvosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-tvossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-tvosx64", version.ref = "kotlinx-io" }
+kotlinx-io-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-watchosarm64", version.ref = "kotlinx-io" }
+kotlinx-io-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-io-watchossimulatorarm64", version.ref = "kotlinx-io" }
+kotlinx-io-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-watchosx64", version.ref = "kotlinx-io" }
+kotlinx-io-windowsx64 = { module = "org.jetbrains.kotlinx:kotlinx-io-windowsx64", version.ref = "kotlinx-io" }
+kotlinx-multik-api = { module = "org.jetbrains.kotlinx:multik-api", version.ref = "kotlinx-multik-api" }
+kotlinx-multik-core-core = { module = "org.jetbrains.kotlinx:multik-core", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-iosarm64 = { module = "org.jetbrains.kotlinx:multik-core-iosarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:multik-core-iossimulatorarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-iosx64 = { module = "org.jetbrains.kotlinx:multik-core-iosx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-js = { module = "org.jetbrains.kotlinx:multik-core-js", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-jvm = { module = "org.jetbrains.kotlinx:multik-core-jvm", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-linuxx64 = { module = "org.jetbrains.kotlinx:multik-core-linuxx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-macosarm64 = { module = "org.jetbrains.kotlinx:multik-core-macosarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-macosx64 = { module = "org.jetbrains.kotlinx:multik-core-macosx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-mingwx64 = { module = "org.jetbrains.kotlinx:multik-core-mingwx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-tvosarm64 = { module = "org.jetbrains.kotlinx:multik-core-tvosarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:multik-core-tvossimulatorarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-tvosx64 = { module = "org.jetbrains.kotlinx:multik-core-tvosx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-wasm = { module = "org.jetbrains.kotlinx:multik-core-wasm", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-watchosarm64 = { module = "org.jetbrains.kotlinx:multik-core-watchosarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:multik-core-watchossimulatorarm64", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-watchosx64 = { module = "org.jetbrains.kotlinx:multik-core-watchosx64", version.ref = "kotlinx-multik" }
+kotlinx-multik-default = { module = "org.jetbrains.kotlinx:komultik-default", version.ref = "kotlinx-multik" }
+kotlinx-multik-jvm = { module = "org.jetbrains.kotlinx:komultik-core-jvm", version.ref = "kotlinx-multik" }
+kotlinx-multik-kotlin = { module = "org.jetbrains.kotlinx:komultik-kotlin", version.ref = "kotlinx-multik" }
+# To use https://github.com/AhmedMourad0/bundlizer Android Bundle format support for Kotlinx Serialization
+kotlinx-serialization-bundlizer-core = "dev.ahmedmourad.bundlizer:bundlizer-core:0.7.0"
+kotlinx-serialization-cbor = { module = "org.jetbrains.kotlinx:kotlinx-serialization-cbor", version.ref = "kotlinx-serialization" }
+# To use https://github.com/Kotlin/kotlinx.serialization Kotlin multiplatform / multi-format serialization
+kotlinx-serialization-core-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-iosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-iosarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-iossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-iossimulatorarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-iosx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-iosx64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-js = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-js", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-jvm = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-linuxx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-linuxx64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-macosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-macosarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-macosx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-macosx64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-mingwx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-mingwx64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-tvosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-tvosarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-tvossimulatorarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-tvosx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-tvosx64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-watchosarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-watchosarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-watchossimulatorarm64", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-core-watchosx64 = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-watchosx64", version.ref = "kotlinx-serialization" }
+# To use https://github.com/hfhbd/kotlinx-serialization-csv CSV and fixed-length formats
+kotlinx-serialization-csv = { module = "app.softwork:kotlinx-serialization-csv", version.ref = "csv" }
+kotlinx-serialization-flf = { module = "app.softwork:kotlinx-serialization-flf", version.ref = "csv" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+# To use https://github.com/esensar/kotlinx-serialization-msgpack MsgPack support (see: https://msgpack.org/)
+kotlinx-serialization-msgpack-core = { module = "com.ensarsarajcic.kotlinx:serialization-msgpack", version.ref = "msg-pack" }
+kotlinx-serialization-msgpack-timestamp-extension = { module = "com.ensarsarajcic.kotlinx:serialization-msgpack-timestamp-extension", version.ref = "msg-pack" }
+kotlinx-serialization-msgpack-unsigned-support = { module = "com.ensarsarajcic.kotlinx:serialization-msgpack-unsigned-support", version.ref = "msg-pack" }
+kotlinx-serialization-properties = { module = "org.jetbrains.kotlinx:kotlinx-serialization-properties", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-protobuf = { module = "org.jetbrains.kotlinx:kotlinx-serialization-protobuf", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-runtime-common = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime-common", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-runtime-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-runtime-native = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native", version.ref = "kotlinx-serialization" }
+# To use https://github.com/EdwarDDay/serialization.kprefs Android SharedPreferences support for Kotlinx Serialization
+kotlinx-serialization-sharedprefs = "net.edwardday.serialization:kprefs:0.12.1"
+kotlinx-serialization-xmlutil-android = { module = "io.github.pdvrieze.xmlutil:core-android", version.ref = "xmlutil" }
+# To use https://github.com/pdvrieze/xmlutil XML Serialization library
+kotlinx-serialization-xmlutil-core = { module = "io.github.pdvrieze.xmlutil:core", version.ref = "xmlutil" }
+kotlinx-serialization-xmlutil-serialization-android = { module = "io.github.pdvrieze.xmlutil:serialization-android", version.ref = "xmlutil" }
+kotlinx-serialization-xmlutil-serialization-core = { module = "io.github.pdvrieze.xmlutil:serialization", version.ref = "xmlutil" }
+# To use https://github.com/him188/yamlkt YAML parser & serializer library
+kotlinx-serialization-yamlkt = { module = "net.mamoe.yamlkt:yamlkt", version.ref = "yamlkt" }
+kotlinx-stdlib-common = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "kotlin-plugin" }
+kotlinx-stdlib-core = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin-plugin" }
+kotlinx-stdlib-js = { module = "org.jetbrains.kotlin:kotlin-stdlib-js", version.ref = "kotlin-plugin" }
+kotlinx-stdlib-wasm = { module = "org.jetbrains.kotlin:kotlin-stdlib-wasm", version.ref = "kotlin-plugin" }
+
+[plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-plugin" }
+kotlin-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin-plugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-plugin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin-plugin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin-plugin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin-plugin" }
+kotlin-scripting = { id = "org.jetbrains.kotlin.plugin.scripting", version.ref = "kotlin-plugin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-plugin" }
+
+[bundles]
+kotlinx-coroutines = [
+    "kotlinx-coroutines-android",
+    "kotlinx-coroutines-core",
+]
+kotlinx-serialization-android = [
+    "kotlinx-serialization-bundlizer-core",
+    "kotlinx-serialization-sharedprefs",
+]
+kotlinx-serialization-core = [
+    "kotlinx-serialization-cbor",
+    "kotlinx-serialization-json",
+    "kotlinx-serialization-properties",
+    "kotlinx-serialization-protobuf",
+]
+kotlinx-serialization-csv = [
+    "kotlinx-serialization-csv",
+    "kotlinx-serialization-flf",
+]
+kotlinx-serialization-msgpack = [
+    "kotlinx-serialization-msgpack-core",
+    "kotlinx-serialization-msgpack-timestamp-extension",
+    "kotlinx-serialization-msgpack-unsigned-support",
+]
+kotlinx-serialization-shared = [
+    "kotlinx-serialization-cbor",
+    "kotlinx-serialization-csv",
+    "kotlinx-serialization-flf",
+    "kotlinx-serialization-json",
+    "kotlinx-serialization-properties",
+    "kotlinx-serialization-protobuf",
+]
+kotlinx-serialization-xmlutil-android = [
+    "kotlinx-serialization-xmlutil-android",
+    "kotlinx-serialization-xmlutil-serialization-android",
+]
+kotlinx-serialization-xmlutil-core = [
+    "kotlinx-serialization-xmlutil-core",
+    "kotlinx-serialization-xmlutil-serialization-core",
+]

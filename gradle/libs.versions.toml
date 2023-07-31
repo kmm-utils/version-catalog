@@ -1,0 +1,65 @@
+[versions]
+espresso-core = "3.5.1"
+# Google TV
+glide = "4.15.1"
+gradle-android = "8.1.0-rc01"
+# Plugins
+gradle-android-plugin = "8.1.0-rc01"
+# Testing
+junit = "4.13.2"
+ktor = "2.3.1"
+retrofit = "2.9.0"
+test-core = "1.5.0"
+test-junit = "1.1.5"
+wire = "4.7.2"
+
+[libraries]
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gragle-android = { module = "com.android.tools.build:gradle", version.ref = "gradle-android-plugin" }
+gragle-wire = { module = "com.squareup.wire:wire-gradle-plugin", version.ref = "wire" }
+junit = { module = "junit:junit", version.ref = "junit" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+retrofit2-converter-wire = { module = "com.squareup.retrofit2:converter-wire", version.ref = "retrofit" }
+retrofit2-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+wire-bom = { module = "com.squareup.wire:wire-bom", version.ref = "wire" }
+wire-compiler-core = { module = "com.squareup.wire:wire-compiler", version.ref = "wire" }
+wire-compiler-iosarm64 = { module = "com.squareup.wire:wire-compiler-iosarm64", version.ref = "wire" }
+wire-compiler-iossimulatorarm64 = { module = "com.squareup.wire:wire-compiler-iossimulatorarm64", version.ref = "wire" }
+wire-compiler-iosx64 = { module = "com.squareup.wire:wire-compiler-iosx64", version.ref = "wire" }
+wire-compiler-js = { module = "com.squareup.wire:wire-compiler-js", version.ref = "wire" }
+wire-compiler-jvm = { module = "com.squareup.wire:wire-compiler-jvm", version.ref = "wire" }
+wire-compiler-linuxx64 = { module = "com.squareup.wire:wire-compiler-linuxx64", version.ref = "wire" }
+wire-compiler-macosarm64 = { module = "com.squareup.wire:wire-compiler-macosarm64", version.ref = "wire" }
+wire-compiler-macossimulatorarm64 = { module = "com.squareup.wire:wire-compiler-macossimulatorarm64", version.ref = "wire" }
+wire-compiler-macosx64 = { module = "com.squareup.wire:wire-compiler-macosx64", version.ref = "wire" }
+wire-compiler-mingwx64 = { module = "com.squareup.wire:wire-compiler-mingwx64", version.ref = "wire" }
+wire-compiler-tvosarm64 = { module = "com.squareup.wire:wire-compiler-tvosarm64", version.ref = "wire" }
+wire-compiler-tvossimulatorarm64 = { module = "com.squareup.wire:wire-compiler-tvossimulatorarm64", version.ref = "wire" }
+wire-compiler-tvosx64 = { module = "com.squareup.wire:wire-compiler-tvosx64", version.ref = "wire" }
+# To use https://github.com/square/wire protobuf and grpc support
+wire-runtime-core = { module = "com.squareup.wire:wire-runtime", version.ref = "wire" }
+wire-runtime-iosarm64 = { module = "com.squareup.wire:wire-runtime-iosarm64", version.ref = "wire" }
+wire-runtime-iossimulatorarm64 = { module = "com.squareup.wire:wire-runtime-iossimulatorarm64", version.ref = "wire" }
+wire-runtime-iosx64 = { module = "com.squareup.wire:wire-runtime-iosx64", version.ref = "wire" }
+wire-runtime-js = { module = "com.squareup.wire:wire-runtime-js", version.ref = "wire" }
+wire-runtime-jvm = { module = "com.squareup.wire:wire-runtime-jvm", version.ref = "wire" }
+wire-runtime-linuxx64 = { module = "com.squareup.wire:wire-runtime-linuxx64", version.ref = "wire" }
+wire-runtime-macosarm64 = { module = "com.squareup.wire:wire-runtime-macosarm64", version.ref = "wire" }
+wire-runtime-macossimulatorarm64 = { module = "com.squareup.wire:wire-runtime-macossimulatorarm64", version.ref = "wire" }
+wire-runtime-macosx64 = { module = "com.squareup.wire:wire-runtime-macosx64", version.ref = "wire" }
+wire-runtime-mingwx64 = { module = "com.squareup.wire:wire-runtime-mingwx64", version.ref = "wire" }
+wire-runtime-tvosarm64 = { module = "com.squareup.wire:wire-runtime-tvosarm64", version.ref = "wire" }
+wire-runtime-tvossimulatorarm64 = { module = "com.squareup.wire:wire-runtime-tvossimulatorarm64", version.ref = "wire" }
+wire-runtime-tvosx64 = { module = "com.squareup.wire:wire-runtime-tvosx64", version.ref = "wire" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle-android" }
+android-library = { id = "com.android.library", version.ref = "gradle-android" }
+gradle-enterprise = "com.gradle.enterprise:3.13.4"
+wire = { id = "com.squareup.wire", version.ref = "wire" }
+
+[bundles]
+retrofit2 = [
+    "retrofit2-converter-wire",
+    "retrofit2-core",
+]
