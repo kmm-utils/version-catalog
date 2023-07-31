@@ -1,9 +1,25 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+
+buildscript {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+        maven("https://oss.sonatype.org/content/repositories/snapshots")
+        maven("https://s01.oss.sonatype.org/content/repositories/releases/")
+    }
+
+    dependencies {
+        classpath(libs.log4j.core)
+    }
+}
+
+@Suppress("DSL_SCOPE_VIOLATION")  // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     `version-catalog`
     `maven-publish`
-    id("com.github.ben-manes.versions") version "0.41.0"
-    id("nl.littlerobots.version-catalog-update") version "0.8.1"
+    alias(libs.plugins.update.versions)
+    alias(libs.plugins.update.versionCatalog)
 }
 
 group = "kmm.utils.version_catalog"
@@ -12,6 +28,7 @@ version = "1.0-SNAPSHOT"
 versionCatalogUpdate {
     // sort the catalog by key (default is true)
     sortByKey.set(true)
+
     // Referenced that are pinned are not automatically updated.
     // They are also not automatically kept however (use keep for that).
     pin {
@@ -28,6 +45,7 @@ versionCatalogUpdate {
         //groups.add("com.somegroup")
         //groups.add("com.someothergroup")
     }
+
     keep {
         // keep has the same options as pin to keep specific entries
         // versions.add("my-version-name")
@@ -46,6 +64,7 @@ versionCatalogUpdate {
         // keep all plugins that aren't used in the project
         keepUnusedPlugins.set(true)
     }
+
     versionCatalogs {
         create("androidX") {
             catalogFile.set(file("gradle/androidxlibs.versions.toml"))
@@ -89,4 +108,28 @@ publishing {
             from(components["versionCatalog"])
         }
     }
+}
+
+// https://github.com/ben-manes/gradle-versions-plugin
+tasks.named<DependencyUpdatesTask>("dependencyUpdates").configure {
+    checkConstraints = true
+    checkBuildEnvironmentConstraints = true
+
+    gradleReleaseChannel = "current"
+    checkForGradleUpdate = true
+
+    outputFormatter = "json"
+    outputDir = "build/dependencyUpdates"
+    reportfileName = "report"
+
+    rejectVersionIf {
+        isNonStable(candidate.version) && !isNonStable(currentVersion)
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.uppercase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }

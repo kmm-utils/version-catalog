@@ -8,6 +8,7 @@ gradle-android-plugin = "8.1.0-rc01"
 # Testing
 junit = "4.13.2"
 ktor = "2.3.1"
+log4j = "2.20.0"
 retrofit = "2.9.0"
 test-core = "1.5.0"
 test-junit = "1.1.5"
@@ -19,6 +20,7 @@ gragle-android = { module = "com.android.tools.build:gradle", version.ref = "gra
 gragle-wire = { module = "com.squareup.wire:wire-gradle-plugin", version.ref = "wire" }
 junit = { module = "junit:junit", version.ref = "junit" }
 ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
 retrofit2-converter-wire = { module = "com.squareup.retrofit2:converter-wire", version.ref = "retrofit" }
 retrofit2-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 wire-bom = { module = "com.squareup.wire:wire-bom", version.ref = "wire" }
@@ -56,6 +58,8 @@ wire-runtime-tvosx64 = { module = "com.squareup.wire:wire-runtime-tvosx64", vers
 android-application = { id = "com.android.application", version.ref = "gradle-android" }
 android-library = { id = "com.android.library", version.ref = "gradle-android" }
 gradle-enterprise = "com.gradle.enterprise:3.13.4"
+update-versionCatalog = "nl.littlerobots.version-catalog-update:0.8.1"
+update-versions = "com.github.ben-manes.versions:0.47.0"
 wire = { id = "com.squareup.wire", version.ref = "wire" }
 
 [bundles]
