@@ -1,9 +1,11 @@
 [versions]
+# @keep this version for use on setting composeOptions.kotlinCompilerExtensionVersion
 compose-kotlin-extension = "1.4.8"
 csv = "0.0.13"
+# @keep this version for use on setting
 jetbrains-kotlin-jvm = "1.8.20"
 # Plugins
-kotlin-plugin = "1.8.22"
+kotlin-plugin = "1.9.0"
 kotlinx-cli = "0.3.5"
 kotlinx-collections-immutable = "0.3.5"
 kotlinx-coroutines = "1.7.1"

@@ -1,17 +1,14 @@
 [versions]
-espresso-core = "3.5.1"
 # Google TV
 glide = "4.15.1"
 gradle-android = "8.1.0-rc01"
 # Plugins
-gradle-android-plugin = "8.1.0-rc01"
+gradle-android-plugin = "8.1.0"
 # Testing
 junit = "4.13.2"
 ktor = "2.3.1"
 log4j = "2.20.0"
 retrofit = "2.9.0"
-test-core = "1.5.0"
-test-junit = "1.1.5"
 wire = "4.7.2"
 
 [libraries]

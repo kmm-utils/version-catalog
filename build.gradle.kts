@@ -5,6 +5,7 @@ buildscript {
         google()
         gradlePluginPortal()
         mavenCentral()
+
         maven("https://oss.sonatype.org/content/repositories/snapshots")
         maven("https://s01.oss.sonatype.org/content/repositories/releases/")
     }
@@ -29,18 +30,30 @@ versionCatalogUpdate {
     // sort the catalog by key (default is true)
     sortByKey.set(true)
 
+    // keep versions without any library or plugin reference
+    val keepUnusedVersionsValue = false
+
+    // keep all libraries that aren't used in the project
+    val keepUnusedLibrariesValue = true
+
+    // keep all plugins that aren't used in the project
+    val keepUnusedPluginsValue = true
+
     // Referenced that are pinned are not automatically updated.
     // They are also not automatically kept however (use keep for that).
     pin {
         // pins all libraries and plugins using the given versions
-        versions.add("my-version-name")
-        versions.add("other-version")
+        //versions.add("my-version-name")
+        //versions.add("other-version")
+
         // pins specific libraries that are in the version catalog
         //libraries.add(libs.my.library.reference)
         //libraries.add(libs.my.other.library.reference)
+
         // pins specific plugins that are in the version catalog
         //plugins.add(libs.plugins.my.plugin)
         //plugins.add(libs.plugins.my.other.plugin)
+
         // pins all libraries (not plugins) for the given groups
         //groups.add("com.somegroup")
         //groups.add("com.someothergroup")
@@ -48,21 +61,18 @@ versionCatalogUpdate {
 
     keep {
         // keep has the same options as pin to keep specific entries
-        // versions.add("my-version-name")
-        //  versions.add("other-version")
-        // libraries.add(libs.my.library.reference)
-        // libraries.add(libs.my.other.library.reference)
-        // plugins.add(libs.plugins.my.plugin)
-        // plugins.add(libs.plugins.my.other.plugin)
+        //versions.add("my-version-name")
+        //versions.add("other-version")
+        //libraries.add(libs.my.library.reference)
+        //libraries.add(libs.my.other.library.reference)
+        //plugins.add(libs.plugins.my.plugin)
+        //plugins.add(libs.plugins.my.other.plugin)
         //groups.add("com.somegroup")
         //groups.add("com.someothergroup")
 
-        // keep versions without any library or plugin reference
-        keepUnusedVersions.set(true)
-        // keep all libraries that aren't used in the project
-        keepUnusedLibraries.set(true)
-        // keep all plugins that aren't used in the project
-        keepUnusedPlugins.set(true)
+        keepUnusedVersions.set(keepUnusedVersionsValue)
+        keepUnusedLibraries.set(keepUnusedLibrariesValue)
+        keepUnusedPlugins.set(keepUnusedPluginsValue)
     }
 
     versionCatalogs {
@@ -70,13 +80,41 @@ versionCatalogUpdate {
             catalogFile.set(file("gradle/androidxlibs.versions.toml"))
             // sorted
             sortByKey.set(true)
+
+            // Referenced that are pinned are not automatically updated.
+            // They are also not automatically kept however (use keep for that).
+            pin {
+                // pins all libraries and plugins using the given versions
+                //versions.add("my-version-name")
+                //versions.add("other-version")
+
+                // pins specific libraries that are in the version catalog
+                //libraries.add(libs.my.library.reference)
+                //libraries.add(libs.my.other.library.reference)
+
+                // pins specific plugins that are in the version catalog
+                //plugins.add(libs.plugins.my.plugin)
+                //plugins.add(libs.plugins.my.other.plugin)
+
+                // pins all libraries (not plugins) for the given groups
+                //groups.add("com.somegroup")
+                //groups.add("com.someothergroup")
+            }
+
             keep {
-                // keep versions without any library or plugin reference
-                keepUnusedVersions.set(true)
-                // keep all libraries that aren't used in the project
-                keepUnusedLibraries.set(true)
-                // keep all plugins that aren't used in the project
-                keepUnusedPlugins.set(true)
+                // keep has the same options as pin to keep specific entries
+                //versions.add("my-version-name")
+                //versions.add("other-version")
+                //libraries.add(libs.my.library.reference)
+                //libraries.add(libs.my.other.library.reference)
+                //plugins.add(libs.plugins.my.plugin)
+                //plugins.add(libs.plugins.my.other.plugin)
+                //groups.add("com.somegroup")
+                //groups.add("com.someothergroup")
+
+                keepUnusedVersions.set(keepUnusedVersionsValue)
+                keepUnusedLibraries.set(keepUnusedLibrariesValue)
+                keepUnusedPlugins.set(keepUnusedPluginsValue)
             }
         }
 
@@ -84,21 +122,43 @@ versionCatalogUpdate {
             catalogFile.set(file("gradle/kotlinlibs.versions.toml"))
             // sorted
             sortByKey.set(true)
+
+            // Referenced that are pinned are not automatically updated.
+            // They are also not automatically kept however (use keep for that).
+            pin {
+                // pins all libraries and plugins using the given versions
+                //versions.add("my-version-name")
+                //versions.add("other-version")
+
+                // pins specific libraries that are in the version catalog
+                //libraries.add(libs.my.library.reference)
+                //libraries.add(libs.my.other.library.reference)
+
+                // pins specific plugins that are in the version catalog
+                //plugins.add(libs.plugins.my.plugin)
+                //plugins.add(libs.plugins.my.other.plugin)
+
+                // pins all libraries (not plugins) for the given groups
+                //groups.add("com.somegroup")
+                //groups.add("com.someothergroup")
+            }
+
             keep {
-                // keep versions without any library or plugin reference
-                keepUnusedVersions.set(true)
-                // keep all libraries that aren't used in the project
-                keepUnusedLibraries.set(true)
-                // keep all plugins that aren't used in the project
-                keepUnusedPlugins.set(true)
+                // keep has the same options as pin to keep specific entries
+                //versions.add("my-version-name")
+                //versions.add("other-version")
+                //libraries.add(libs.my.library.reference)
+                //libraries.add(libs.my.other.library.reference)
+                //plugins.add(libs.plugins.my.plugin)
+                //plugins.add(libs.plugins.my.other.plugin)
+                //groups.add("com.somegroup")
+                //groups.add("com.someothergroup")
+
+                keepUnusedVersions.set(keepUnusedVersionsValue)
+                keepUnusedLibraries.set(keepUnusedLibrariesValue)
+                keepUnusedPlugins.set(keepUnusedPluginsValue)
             }
         }
-    }
-}
-
-catalog {
-    versionCatalog {
-
     }
 }
 

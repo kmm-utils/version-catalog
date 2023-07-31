@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Version-Catalog [versionCatalogFormat]" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="Format All" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -11,6 +11,8 @@
       <option name="taskNames">
         <list>
           <option value="versionCatalogFormat" />
+          <option value="versionCatalogFormatAndroidX" />
+          <option value="versionCatalogFormatKotlin" />
         </list>
       </option>
       <option name="vmOptions" />
