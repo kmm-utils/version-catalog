@@ -57,6 +57,17 @@ publishing {
             }
         }
     }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = java.net.URI("https://maven.pkg.github.com/kmm-utils/version-catalog")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
 
 versionCatalogUpdate {
