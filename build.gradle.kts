@@ -23,8 +23,41 @@ plugins {
     alias(libs.plugins.update.versionCatalog)
 }
 
-group = "kmm.utils.version_catalog"
+group = "kmm.utils"
 version = "1.0-SNAPSHOT"
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            artifactId = "version-catalog"
+            from(components["versionCatalog"])
+
+            pom {
+                name.set("Kotlin Mobile Multiplatform Utils Version Catalog")
+                description.set("The version catalog used on the KMM Utils projects")
+                url.set("https://github.com/kmm-utils/version-catalog")
+                licenses {
+                    license {
+                        name.set("MIT")
+                        url.set("https://mit-license.org/")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("arlm")
+                        name.set("Alexandre Rocha Lima e Marcondes")
+                        email.set("alexandre.marcondes@gmail.com")
+                    }
+                }
+                scm {
+                    connection.set("scm:git:git://github.com:kmm-utils/version-catalog.git")
+                    developerConnection.set("scm:git:ssh://git@github.com:kmm-utils/version-catalog.git")
+                    url.set("https://github.com/kmm-utils/version-catalog")
+                }
+            }
+        }
+    }
+}
 
 versionCatalogUpdate {
     // sort the catalog by key (default is true)
@@ -158,14 +191,6 @@ versionCatalogUpdate {
                 keepUnusedLibraries.set(keepUnusedLibrariesValue)
                 keepUnusedPlugins.set(keepUnusedPluginsValue)
             }
-        }
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["versionCatalog"])
         }
     }
 }
