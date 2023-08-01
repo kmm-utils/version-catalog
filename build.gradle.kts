@@ -63,12 +63,47 @@ publishing {
             name = "GitHubPackages"
             url = java.net.URI("https://maven.pkg.github.com/kmm-utils/version-catalog")
             credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
+                username = System.getenv("GITHUB_ACTOR") ?: System.getenv("USERNAME")
+                password = System.getenv("GITHUB_TOKEN") ?: System.getenv("TOKEN")
             }
         }
     }
 }
+
+catalog {
+    versionCatalog {
+        versionCatalogs.forEach { c ->
+            c.versionAliases.forEach { v ->
+                val value = c.findVersion(v).get().toString()
+                project.logger.lifecycle("Adding version $v as '$value'")
+                version(v, value)
+            }
+            c.libraryAliases.forEach { l ->
+                val lib = c.findLibrary(l).get().get()
+                val value = "${lib.group}:${lib.name}:${lib.version}"
+                project.logger.lifecycle("Adding library $l as '$value'")
+                library(l, lib.group!!, lib.name).version(lib.version.toString())
+            }
+            c.pluginAliases.forEach { p ->
+                val plug = c.findPlugin(p).get().get()
+                project.logger.lifecycle("Adding plugin $p as '${plug.pluginId}:${plug.version}'")
+                plugin(p, plug.pluginId).version(plug.version.toString())
+            }
+            c.bundleAliases.forEach { b ->
+                val items = c.findBundle(b).get().get()
+                    .map { d ->
+                        c.libraryAliases.find {
+                            val l = c.findLibrary(it).get().get()
+                            l.group == d.group && l.name == d.name
+                        }
+                    }
+                project.logger.lifecycle("Adding bundle $b as '$items'")
+                bundle(b, items)
+            }
+        }
+    }
+}
+
 
 versionCatalogUpdate {
     // sort the catalog by key (default is true)
