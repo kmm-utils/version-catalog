@@ -24,7 +24,7 @@ plugins {
 }
 
 group = "kmm.utils"
-version = "0.3"
+version = "0.4"
 
 publishing {
     publications {

@@ -201,10 +201,12 @@ kotlinx-serialization-xmlutil-serialization-android = { module = "io.github.pdvr
 kotlinx-serialization-xmlutil-serialization-core = { module = "io.github.pdvrieze.xmlutil:serialization", version.ref = "xmlutil" }
 # To use https://github.com/him188/yamlkt YAML parser & serializer library
 kotlinx-serialization-yamlkt = { module = "net.mamoe.yamlkt:yamlkt", version.ref = "yamlkt" }
-kotlinx-stdlib-common = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "kotlin-plugin" }
-kotlinx-stdlib-core = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin-plugin" }
-kotlinx-stdlib-js = { module = "org.jetbrains.kotlin:kotlin-stdlib-js", version.ref = "kotlin-plugin" }
-kotlinx-stdlib-wasm = { module = "org.jetbrains.kotlin:kotlin-stdlib-wasm", version.ref = "kotlin-plugin" }
+kotlinx-stdlib-common = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-core = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-js = { module = "org.jetbrains.kotlin:kotlin-stdlib-js", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-wasm = { module = "org.jetbrains.kotlin:kotlin-stdlib-wasm", version.ref = "jetbrains-kotlin-jvm" }
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-plugin" }
