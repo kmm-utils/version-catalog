@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Update AndroidX" type="GradleRunConfiguration" factoryName="Gradle">
+  <configuration default="false" name="Apply All Updates" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -10,7 +10,9 @@
       </option>
       <option name="taskNames">
         <list>
-          <option value="versionCatalogUpdateAndroidX" />
+          <option value="versionCatalogApplyUpdates" />
+          <option value="versionCatalogApplyUpdatesAndroidX" />
+          <option value="versionCatalogApplyUpdatesKotlin" />
         </list>
       </option>
       <option name="vmOptions" />
@@ -18,6 +20,7 @@
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
     <DebugAllEnabled>false</DebugAllEnabled>
+    <RunAsTest>false</RunAsTest>
     <method v="2" />
   </configuration>
 </component>

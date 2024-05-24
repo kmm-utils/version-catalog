@@ -1,21 +1,24 @@
 [versions]
+ben-manes-versions = "0.51.0"
 # Google TV
-glide = "4.15.1"
-gradle-android = "8.1.0-rc01"
+glide = "4.16.0"
+gradle-android = "8.6.0-alpha03"
 # Plugins
-gradle-android-plugin = "8.1.0"
+gradle-android-plugin = "8.4.1"
+gradle-enterprise = "3.17.4"
 # Testing
 junit = "4.13.2"
-ktor = "2.3.1"
-log4j = "2.20.0"
-retrofit = "2.9.0"
-wire = "4.7.2"
+ktor = "2.3.11"
+log4j = "2.23.1"
+retrofit = "2.11.0"
+version-catalog-update = "0.8.4"
+wire = "4.9.9"
 
 [libraries]
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 gradle-android = { module = "com.android.tools.build:gradle", version.ref = "gradle-android-plugin" }
 gradle-wire = { module = "com.squareup.wire:wire-gradle-plugin", version.ref = "wire" }
-jetbrains-annotations = "org.jetbrains:annotations:13.0"
+jetbrains-annotations = "org.jetbrains:annotations:24.1.0"
 junit = { module = "junit:junit", version.ref = "junit" }
 ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
 log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
@@ -55,9 +58,9 @@ wire-runtime-tvosx64 = { module = "com.squareup.wire:wire-runtime-tvosx64", vers
 [plugins]
 android-application = { id = "com.android.application", version.ref = "gradle-android" }
 android-library = { id = "com.android.library", version.ref = "gradle-android" }
-gradle-enterprise = "com.gradle.enterprise:3.13.4"
-update-versionCatalog = "nl.littlerobots.version-catalog-update:0.8.1"
-update-versions = "com.github.ben-manes.versions:0.47.0"
+gradle-enterprise = { id = "com.gradle.enterprise", version.ref = "gradle-enterprise" }
+update-versionCatalog = { id = "nl.littlerobots.version-catalog-update", version.ref = "version-catalog-update" }
+update-versions = { id = "com.github.ben-manes.versions", version.ref = "ben-manes-versions" }
 wire = { id = "com.squareup.wire", version.ref = "wire" }
 
 [bundles]

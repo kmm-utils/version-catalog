@@ -1,27 +1,27 @@
 [versions]
 # @keep this version for use on setting composeOptions.kotlinCompilerExtensionVersion
 compose-kotlin-extension = "1.4.8"
-csv = "0.0.13"
+csv = "0.0.18"
 # @keep this version for use on setting
-jetbrains-kotlin-jvm = "1.8.20"
+jetbrains-kotlin-jvm = "2.0.0"
 # Plugins
-kotlin-plugin = "1.9.0"
-kotlinx-cli = "0.3.5"
-kotlinx-collections-immutable = "0.3.5"
-kotlinx-coroutines = "1.7.1"
-kotlinx-coroutines-debug = "1.4.0"
+kotlin-plugin = "2.0.0"
+kotlinx-cli = "0.3.6"
+kotlinx-collections-immutable = "0.3.7"
+kotlinx-coroutines = "1.8.1"
+kotlinx-coroutines-debug = "1.8.1"
 kotlinx-coroutines-io = "0.24.0"
-kotlinx-datetime = "0.4.0"
+kotlinx-datetime = "0.6.0"
 kotlinx-deeplearning-api = "0.5.2"
-kotlinx-html = "0.8.1"
+kotlinx-html = "0.11.0"
 kotlinx-html-common = "0.7.3"
 kotlinx-io = "0.1.16"
-kotlinx-multik = "0.2.2"
+kotlinx-multik = "0.2.3"
 kotlinx-multik-api = "0.1.1"
-kotlinx-serialization = "1.5.1"
+kotlinx-serialization = "1.6.3"
 msg-pack = "0.5.5"
 # Third-party libraries versions
-xmlutil = "0.86.0"
+xmlutil = "0.86.3"
 yamlkt = "0.13.0"
 
 [libraries]
@@ -152,7 +152,7 @@ kotlinx-multik-core-mingwx64 = { module = "org.jetbrains.kotlinx:multik-core-min
 kotlinx-multik-core-tvosarm64 = { module = "org.jetbrains.kotlinx:multik-core-tvosarm64", version.ref = "kotlinx-multik" }
 kotlinx-multik-core-tvossimulatorarm64 = { module = "org.jetbrains.kotlinx:multik-core-tvossimulatorarm64", version.ref = "kotlinx-multik" }
 kotlinx-multik-core-tvosx64 = { module = "org.jetbrains.kotlinx:multik-core-tvosx64", version.ref = "kotlinx-multik" }
-kotlinx-multik-core-wasm = { module = "org.jetbrains.kotlinx:multik-core-wasm", version.ref = "kotlinx-multik" }
+kotlinx-multik-core-wasm = "org.jetbrains.kotlinx:multik-core-wasm:0.2.2"
 kotlinx-multik-core-watchosarm64 = { module = "org.jetbrains.kotlinx:multik-core-watchosarm64", version.ref = "kotlinx-multik" }
 kotlinx-multik-core-watchossimulatorarm64 = { module = "org.jetbrains.kotlinx:multik-core-watchossimulatorarm64", version.ref = "kotlinx-multik" }
 kotlinx-multik-core-watchosx64 = { module = "org.jetbrains.kotlinx:multik-core-watchosx64", version.ref = "kotlinx-multik" }
@@ -160,7 +160,7 @@ kotlinx-multik-default = { module = "org.jetbrains.kotlinx:komultik-default", ve
 kotlinx-multik-jvm = { module = "org.jetbrains.kotlinx:komultik-core-jvm", version.ref = "kotlinx-multik" }
 kotlinx-multik-kotlin = { module = "org.jetbrains.kotlinx:komultik-kotlin", version.ref = "kotlinx-multik" }
 # To use https://github.com/AhmedMourad0/bundlizer Android Bundle format support for Kotlinx Serialization
-kotlinx-serialization-bundlizer-core = "dev.ahmedmourad.bundlizer:bundlizer-core:0.7.0"
+kotlinx-serialization-bundlizer-core = "dev.ahmedmourad.bundlizer:bundlizer-core:0.8.0"
 kotlinx-serialization-cbor = { module = "org.jetbrains.kotlinx:kotlinx-serialization-cbor", version.ref = "kotlinx-serialization" }
 # To use https://github.com/Kotlin/kotlinx.serialization Kotlin multiplatform / multi-format serialization
 kotlinx-serialization-core-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
@@ -193,7 +193,7 @@ kotlinx-serialization-runtime-common = { module = "org.jetbrains.kotlinx:kotlinx
 kotlinx-serialization-runtime-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime", version.ref = "kotlinx-serialization" }
 kotlinx-serialization-runtime-native = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native", version.ref = "kotlinx-serialization" }
 # To use https://github.com/EdwarDDay/serialization.kprefs Android SharedPreferences support for Kotlinx Serialization
-kotlinx-serialization-sharedprefs = "net.edwardday.serialization:kprefs:0.12.1"
+kotlinx-serialization-sharedprefs = "net.edwardday.serialization:kprefs:0.12.2"
 kotlinx-serialization-xmlutil-android = { module = "io.github.pdvrieze.xmlutil:core-android", version.ref = "xmlutil" }
 # To use https://github.com/pdvrieze/xmlutil XML Serialization library
 kotlinx-serialization-xmlutil-core = { module = "io.github.pdvrieze.xmlutil:core", version.ref = "xmlutil" }
@@ -206,7 +206,7 @@ kotlinx-stdlib-core = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.r
 kotlinx-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "jetbrains-kotlin-jvm" }
 kotlinx-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "jetbrains-kotlin-jvm" }
 kotlinx-stdlib-js = { module = "org.jetbrains.kotlin:kotlin-stdlib-js", version.ref = "jetbrains-kotlin-jvm" }
-kotlinx-stdlib-wasm = { module = "org.jetbrains.kotlin:kotlin-stdlib-wasm", version.ref = "jetbrains-kotlin-jvm" }
+kotlinx-stdlib-wasm = "org.jetbrains.kotlin:kotlin-stdlib-wasm:1.9.10"
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-plugin" }

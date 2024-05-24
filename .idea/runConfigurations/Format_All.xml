@@ -13,6 +13,7 @@
           <option value="versionCatalogFormat" />
           <option value="versionCatalogFormatAndroidX" />
           <option value="versionCatalogFormatKotlin" />
+          <option value="--interactive" />
         </list>
       </option>
       <option name="vmOptions" />
@@ -20,6 +21,7 @@
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
     <DebugAllEnabled>false</DebugAllEnabled>
+    <RunAsTest>false</RunAsTest>
     <method v="2" />
   </configuration>
 </component>

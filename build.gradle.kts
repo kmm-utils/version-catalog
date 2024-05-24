@@ -24,7 +24,7 @@ plugins {
 }
 
 group = "kmm.utils"
-version = "0.4"
+version = "0.5"
 
 publishing {
     publications {
@@ -75,18 +75,18 @@ catalog {
         versionCatalogs.forEach { c ->
             c.versionAliases.forEach { v ->
                 val value = c.findVersion(v).get().toString()
-                project.logger.lifecycle("Adding version $v as '$value'")
+                project.logger.debug("Adding version $v as '$value'")
                 version(v, value)
             }
             c.libraryAliases.forEach { l ->
                 val lib = c.findLibrary(l).get().get()
                 val value = "${lib.group}:${lib.name}:${lib.version}"
-                project.logger.lifecycle("Adding library $l as '$value'")
-                library(l, lib.group!!, lib.name).version(lib.version.toString())
+                project.logger.debug("Adding library $l as '$value'")
+                library(l, lib.group, lib.name).version(lib.version!!)
             }
             c.pluginAliases.forEach { p ->
                 val plug = c.findPlugin(p).get().get()
-                project.logger.lifecycle("Adding plugin $p as '${plug.pluginId}:${plug.version}'")
+                project.logger.debug("Adding plugin $p as '${plug.pluginId}:${plug.version}'")
                 plugin(p, plug.pluginId).version(plug.version.toString())
             }
             c.bundleAliases.forEach { b ->
@@ -97,7 +97,7 @@ catalog {
                             l.group == d.group && l.name == d.name
                         }
                     }
-                project.logger.lifecycle("Adding bundle $b as '$items'")
+                project.logger.debug("Adding bundle $b as '$items'")
                 bundle(b, items)
             }
         }
@@ -107,7 +107,7 @@ catalog {
 
 versionCatalogUpdate {
     // sort the catalog by key (default is true)
-    sortByKey.set(true)
+    val sortByKeyValue = false
 
     // keep versions without any library or plugin reference
     val keepUnusedVersionsValue = false
@@ -117,6 +117,8 @@ versionCatalogUpdate {
 
     // keep all plugins that aren't used in the project
     val keepUnusedPluginsValue = true
+
+    sortByKey.set(sortByKeyValue)
 
     // Referenced that are pinned are not automatically updated.
     // They are also not automatically kept however (use keep for that).
@@ -158,7 +160,7 @@ versionCatalogUpdate {
         create("androidX") {
             catalogFile.set(file("gradle/androidxlibs.versions.toml"))
             // sorted
-            sortByKey.set(true)
+            sortByKey.set(sortByKeyValue)
 
             // Referenced that are pinned are not automatically updated.
             // They are also not automatically kept however (use keep for that).
@@ -200,7 +202,7 @@ versionCatalogUpdate {
         create("kotlin") {
             catalogFile.set(file("gradle/kotlinlibs.versions.toml"))
             // sorted
-            sortByKey.set(true)
+            sortByKey.set(sortByKeyValue)
 
             // Referenced that are pinned are not automatically updated.
             // They are also not automatically kept however (use keep for that).

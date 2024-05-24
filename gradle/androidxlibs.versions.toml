@@ -1,54 +1,56 @@
 [versions]
-activity = "1.7.2"
-androidx-collection = "1.2.0"
-androidx-sqlite = "sqlite"
-androidx-transition = "1.4.1"
+activity = "1.9.0"
+androidx-collection = "1.4.0"
+androidx-slice = "1.0.0"
+androidx-sqlite = "2.4.0"
+androidx-transition = "1.5.0"
 appcompat = "1.6.1"
 appsearch = "1.1.0-alpha03"
-compose-bom = "2023.06.01"
+compose-bom = "2024.05.00"
 # JetPack Compose
-compose-core = "1.4.3"
-compose-material3 = "1.1.1"
-credentials-edge = "1.2.0-beta01"
+compose-core = "1.6.7"
+compose-material3 = "1.2.1"
+credentials-edge = "1.22"
 #noinspection GradleDependency this is the API Level 33 version
 credentials-stable = "1.2.0-alpha05"
-datastore = "1.0.0"
-emoji2 = "1.3.0"
+datastore = "1.1.1"
+emoji2 = "1.4.0"
 # Testing
 espresso-core = "3.5.1"
-games = "2.0.0"
-glance = "1.0.0-rc01"
-horologist = "0.4.10"
+games = "2.0.1"
+glance = "1.1.0-rc01"
+horologist = "0.6.12"
 leanback = "1.0.0"
 legacy-support-v4 = "1.0.0"
-lifecycle = "2.6.1"
+lifecycle = "2.8.0"
 # Material design
-material = "1.9.0"
-navigation = "2.6.0"
+material = "1.12.0"
+navigation = "2.7.7"
 percentlayout = "1.0.0"
 # Android Wear
-play-services-wearable = "18.0.0"
+play-services-wearable = "18.1.0"
 preference = "1.2.1"
-protolayout = "1.0.0-rc01"
+protolayout = "1.2.0-alpha03"
 support = "28.0.0"
 test-core = "1.5.0"
 test-junit = "1.1.5"
-tiles = "1.1.0"
+tiles = "1.3.0"
 # Google TV
-tv-compose = "1.0.0-alpha08"
+tv-compose = "1.0.0-beta01"
 tv-provider = "1.1.0-alpha01"
-vectordrawable = "1.1.0"
-watchface = "1.1.1"
-wear-compose = "1.1.2"
+vectordrawable = "1.2.0"
+watchface = "1.2.1"
+wear-compose = "1.3.1"
 wear-input = "1.1.0"
-window = "1.1.0"
+window = "1.2.0"
+androidx-graphics = "1.0.0-rc01"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
-androidx-annotation-core = "androidx.annotation:annotation:1.6.0"
+androidx-annotation-core = "androidx.annotation:annotation:1.8.0"
 # To use the Java-compatible @Experimental API annotation
-androidx-annotation-experimental = "androidx.annotation:annotation-experimental:1.4.0-dev01"
+androidx-annotation-experimental = "androidx.annotation:annotation-experimental:1.4.0-rc01"
 androidx-appcompat-core = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 # For loading and tinting drawables on older versions of the platform
 androidx-appcompat-resources = { module = "androidx.appcompat:appcompat-resources", version.ref = "appcompat" }
@@ -62,7 +64,7 @@ androidx-appsearch-platform-storage = { module = "androidx.appsearch:appsearch-p
 androidx-arch-core-testing = "androidx.arch.core:core-testing:2.2.0"
 androidx-autofill = "androidx.autofill:autofill:1.1.0"
 androidx-biometric = "androidx.biometric:biometric:1.2.0-alpha05"
-androidx-browser = "androidx.browser:browser:1.5.0"
+androidx-browser = "androidx.browser:browser:1.8.0"
 androidx-collection-core = { module = "androidx.collection:collection", version.ref = "androidx-collection" }
 androidx-collection-ktx = { module = "androidx.collection:collection-ktx", version.ref = "androidx-collection" }
 androidx-compose-animation = { module = "androidx.compose.animation:animation", version.ref = "compose-core" }
@@ -70,6 +72,7 @@ androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = 
 androidx-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose-core" }
 androidx-compose-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "compose-core" }
 androidx-compose-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose-core" }
+androidx-compose-material = { module = "androidx.compose.material:material", version.ref = "compose-core" }
 androidx-compose-material3-core = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
 androidx-compose-material3-window-size = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "compose-material3" }
 androidx-compose-runtime-core = { module = "androidx.compose.runtime:runtime", version.ref = "compose-core" }
@@ -80,19 +83,19 @@ androidx-compose-ui-core = { module = "androidx.compose.ui:ui", version.ref = "c
 androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-core" }
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-core" }
 androidx-compose-ui-tooling-core = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-core" }
-androidx-compose-ui-tooling-preview-android = "androidx.compose.ui:ui-tooling-preview-android:1.6.0-alpha02"
+androidx-compose-ui-tooling-preview-android = "androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta01"
 androidx-compose-ui-tooling-preview-core = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-core" }
 androidx-core-animation = "androidx.core:core-animation:1.0.0-rc01"
 # For using ShortcutManagerCompat to donate shortcuts to be used by Google
 androidx-core-google-shortcuts = "androidx.core:core-google-shortcuts:1.1.0"
 androidx-core-ktx-edge = "androidx.core:core-ktx:1.12.0-beta01"
-androidx-core-ktx-stable = "androidx.core:core-ktx:1.10.1"
+androidx-core-ktx-stable = "androidx.core:core-ktx:1.14.0-alpha01"
 androidx-core-role = "androidx.core:core-role:1.0.0"
 # APIs for SplashScreen, including compatibility helpers on devices prior Android 12
 androidx-core-splashscreen-edge = "androidx.core:core-splashscreen:1.1.0-alpha01"
-androidx-core-splashscreen-stable = "androidx.core:core-splashscreen:1.0.1"
+androidx-core-splashscreen-stable = "androidx.core:core-splashscreen:1.2.0-alpha01"
 # Use to implement UWB (ultra-wide-band) on supported devices
-androidx-core-uwb = "androidx.core.uwb:uwb:1.0.0-alpha06"
+androidx-core-uwb = "androidx.core.uwb:uwb:1.0.0-alpha08"
 androidx-credentials-edge = { module = "androidx.credentials:credentials", version.ref = "credentials-edge" }
 androidx-credentials-play-services-auth-edge = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials-edge" }
 # Credentials support from play services, for devices running Android 13 and below.
@@ -109,7 +112,7 @@ androidx-emoji2-views-core = { module = "androidx.emoji2:emoji2-views", version.
 androidx-emoji2-views-helper = { module = "androidx.emoji2:emoji2-views-helper", version.ref = "emoji2" }
 androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
 # To use the Games Activity library
-androidx-games-activity = "androidx.games:games-activity:2.0.2"
+androidx-games-activity = "androidx.games:games-activity:3.0.3"
 # To use the Games Controller Library
 androidx-games-controller = { module = "androidx.games:games-controller", version.ref = "games" }
 # To use the Android Frame Pacing library
@@ -119,14 +122,14 @@ androidx-games-performance-tuner = { module = "androidx.games:games-performance-
 # To use the Games Text Input Library
 # Do not include this if games-activity has been included
 androidx-games-text-input = { module = "androidx.games:games-text-input", version.ref = "games" }
-androidx-graphics-core = "androidx.graphics:graphics-core:1.0.0-alpha04"
-androidx-graphics-path = "androidx.graphics:graphics-path:1.0.0-alpha02"
-androidx-graphics-shapes = "androidx.graphics:graphics-shapes:1.0.0-alpha03"
-androidx-input-motionprediction = "androidx.input:input-motionprediction:1.0.0-beta02"
+androidx-graphics-core = { module = "androidx.graphics:graphics-core", version.ref = "androidx-graphics" }
+androidx-graphics-path = { module = "androidx.graphics:graphics-path", version.ref = "androidx-graphics" }
+androidx-graphics-shapes = "androidx.graphics:graphics-shapes:1.0.0-beta01"
+androidx-input-motionprediction = "androidx.input:input-motionprediction:1.0.0-beta04"
 androidx-interpolator = "androidx.interpolator:interpolator:1.0.0"
-androidx-javascriptengine = "androidx.javascriptengine:javascriptengine:1.0.0-alpha05"
+androidx-javascriptengine = "androidx.javascriptengine:javascriptengine:1.0.0-beta01"
 androidx-leanback-core = { module = "androidx.leanback:leanback", version.ref = "leanback" }
-androidx-leanback-paging = "androidx.leanback:leanback-paging:1.1.0-alpha09"
+androidx-leanback-paging = "androidx.leanback:leanback-paging:1.1.0-alpha11"
 androidx-leanback-preference = { module = "androidx.leanback:leanback-preference", version.ref = "leanback" }
 androidx-leanback-tab = "androidx.leanback:leanback-tab:1.1.0-beta01"
 # Annotation processor
@@ -166,12 +169,12 @@ androidx-pallete = "androidx.palette:graphics:1.0.0"
 androidx-percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentlayout" }
 androidx-preference-core = { module = "androidx.preference:preference", version.ref = "preference" }
 androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preference" }
-androidx-recyclerview-core = "androidx.recyclerview:recyclerview:1.3.1"
+androidx-recyclerview-core = "androidx.recyclerview:recyclerview:1.3.2"
 androidx-recyclerview-selection = "androidx.recyclerview:recyclerview-selection:1.1.0"
-androidx-slice-builders-core = "androidx.slice:slice-builders:slice"
+androidx-slice-builders-core = { module = "androidx.slice:slice-builders", version.ref = "androidx-slice" }
 androidx-slice-builders-ktx = "androidx.slice:slice-builders-ktx:1.0.0-alpha08"
-androidx-slice-core = "androidx.slice:slice-core:slice"
-androidx-slice-view = "androidx.slice:slice-view:slice"
+androidx-slice-core = { module = "androidx.slice:slice-core", version.ref = "androidx-slice" }
+androidx-slice-view = { module = "androidx.slice:slice-view", version.ref = "androidx-slice" }
 androidx-slidingpanelayout = "androidx.slidingpanelayout:slidingpanelayout:1.2.0"
 androidx-sqlite-core = { module = "androidx.sqlite:sqlite", version.ref = "androidx-sqlite" }
 androidx-sqlite-framework = { module = "androidx.sqlite:sqlite-framework", version.ref = "androidx-sqlite" }
@@ -191,12 +194,12 @@ androidx-test-orchestrator = "androidx.test:orchestrator:1.4.2"
 # (androidTestImplementation) To use the androidx.test.runner APIs
 androidx-test-runner = "androidx.test:runner:1.5.2"
 androidx-test-truth = "androidx.test.ext:truth:1.5.0"
-androidx-test-uiautomator = "androidx.test.uiautomator:uiautomator:2.3.0-alpha04"
+androidx-test-uiautomator = "androidx.test.uiautomator:uiautomator:2.3.0-rc01"
 androidx-textclassifier = "androidx.textclassifier:textclassifier:1.0.0-alpha04"
 androidx-transition-core = { module = "androidx.transition:transition-ktx", version.ref = "androidx-transition" }
 androidx-transition-ktx = { module = "androidx.transition:transition-ktx", version.ref = "androidx-transition" }
 androidx-tv-compose-foundation = { module = "androidx.tv:tv-material", version.ref = "tv-compose" }
-androidx-tv-compose-material = { module = "androidx.tv:tv-foundation", version.ref = "tv-compose" }
+androidx-tv-compose-material = "androidx.tv:tv-foundation:1.0.0-alpha10"
 androidx-tv-provider = { module = "androidx.tvprovider:tvprovider", version.ref = "tv-provider" }
 androidx-tv-recommendation = "androidx.recommendation:recommendation:1.0.0"
 androidx-vectordrawable-animated = { module = "androidx.vectordrawable:vectordrawable-animated", version.ref = "vectordrawable" }
@@ -213,7 +216,7 @@ androidx-watchface-editor = { module = "androidx.wear.watchface:watchface-editor
 androidx-wear-compose-foundation = { module = "androidx.wear.compose:compose-foundation", version.ref = "wear-compose" }
 androidx-wear-compose-material = { module = "androidx.wear.compose:compose-material", version.ref = "wear-compose" }
 androidx-wear-compose-navigation = { module = "androidx.wear.compose:compose-navigation", version.ref = "wear-compose" }
-androidx-wear-core = "androidx.wear:wear:1.2.0"
+androidx-wear-core = "androidx.wear:wear:1.3.0"
 androidx-wear-glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
 androidx-wear-glance-core = { module = "androidx.glance:tiles-renderer", version.ref = "glance" }
 androidx-wear-glance-wear-tiles = "androidx.glance:glance-wear-tiles:1.0.0-alpha05"
@@ -238,7 +241,7 @@ androidx-wear-tiles-material = { module = "androidx.wear.tiles:tiles-material", 
 androidx-wear-tiles-renderer = { module = "androidx.wear.tiles:tiles-renderer", version.ref = "tiles" }
 # (testImplementation) Use to fetch tiles from a tile provider in your tests
 androidx-wear-tiles-testing = { module = "androidx.wear.tiles:tiles-testing", version.ref = "tiles" }
-androidx-webkit = "androidx.webkit:webkit:1.7.0"
+androidx-webkit = "androidx.webkit:webkit:1.11.0"
 androidx-window-core = { module = "androidx.window:window", version.ref = "window" }
 androidx-window-extensions-core = "androidx.window.extensions.core:core:1.0.0"
 androidx-window-rxjava2 = { module = "androidx.window:window-rxjava2", version.ref = "window" }
