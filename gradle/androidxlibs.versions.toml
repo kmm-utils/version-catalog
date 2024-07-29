@@ -1,56 +1,56 @@
 [versions]
-activity = "1.9.0"
-androidx-collection = "1.4.0"
+activity = "1.9.1"
+androidx-collection = "1.4.2"
 androidx-slice = "1.0.0"
 androidx-sqlite = "2.4.0"
-androidx-transition = "1.5.0"
-appcompat = "1.6.1"
+androidx-transition = "1.5.1"
+appcompat = "1.7.0"
 appsearch = "1.1.0-alpha03"
-compose-bom = "2024.05.00"
+compose-bom = "2024.06.00"
 # JetPack Compose
-compose-core = "1.6.7"
+compose-core = "1.6.8"
 compose-material3 = "1.2.1"
 credentials-edge = "1.3.0-alpha04"
 #noinspection GradleDependency this is the API Level 33 version
-credentials-stable = "1.3.0-alpha04"
+credentials-stable = "1.5.0-alpha03"
 datastore = "1.1.1"
 emoji2 = "1.4.0"
 # Testing
-espresso-core = "3.5.1"
-games = "3.0.3"
+espresso-core = "3.6.1"
+games = "3.0.4"
 glance = "1.1.0-rc01"
-horologist = "0.6.12"
+horologist = "0.6.17"
 leanback = "1.0.0"
 legacy-support-v4 = "1.0.0"
-lifecycle = "2.8.0"
+lifecycle = "2.8.4"
 # Material design
 material = "1.12.0"
 navigation = "2.7.7"
 percentlayout = "1.0.0"
 # Android Wear
-play-services-wearable = "18.1.0"
+play-services-wearable = "18.2.0"
 preference = "1.2.1"
-protolayout = "1.2.0-alpha03"
+protolayout = "1.2.0-rc01"
 support = "28.0.0"
-test-core = "1.5.0"
-test-junit = "1.1.5"
+test-core = "1.6.1"
+test-junit = "1.2.1"
 tiles = "1.3.0"
 # Google TV
-tv-compose = "1.0.0-beta01"
+tv-compose = "1.0.0-rc01"
 tv-provider = "1.1.0-alpha01"
 vectordrawable = "1.2.0"
 watchface = "1.2.1"
 wear-compose = "1.3.1"
 wear-input = "1.1.0"
-window = "1.2.0"
+window = "1.3.0"
 androidx-graphics = "1.0.0-rc01"
-androidx-fragment = "1.7.1"
-jetbrains-compose-plugin = "1.6.10"
+androidx-fragment = "1.8.2"
+jetbrains-compose-plugin = "1.6.11"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
-androidx-annotation-core = "androidx.annotation:annotation:1.8.0"
+androidx-annotation-core = "androidx.annotation:annotation:1.8.1"
 # To use the Java-compatible @Experimental API annotation
 androidx-annotation-experimental = "androidx.annotation:annotation-experimental:1.4.0-rc01"
 androidx-appcompat-core = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -65,7 +65,7 @@ androidx-appsearch-platform-storage = { module = "androidx.appsearch:appsearch-p
 # optional - Test helpers for LiveData
 androidx-arch-core-testing = "androidx.arch.core:core-testing:2.2.0"
 androidx-autofill = "androidx.autofill:autofill:1.1.0"
-androidx-biometric = "androidx.biometric:biometric:1.2.0-alpha05"
+androidx-biometric = "androidx.biometric:biometric:1.4.0-alpha01"
 androidx-browser = "androidx.browser:browser:1.8.0"
 androidx-collection-core = { module = "androidx.collection:collection", version.ref = "androidx-collection" }
 androidx-collection-ktx = { module = "androidx.collection:collection-ktx", version.ref = "androidx-collection" }
@@ -85,13 +85,13 @@ androidx-compose-ui-core = { module = "androidx.compose.ui:ui", version.ref = "c
 androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose-core" }
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose-core" }
 androidx-compose-ui-tooling-core = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose-core" }
-androidx-compose-ui-tooling-preview-android = "androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta01"
+androidx-compose-ui-tooling-preview-android = "androidx.compose.ui:ui-tooling-preview-android:1.7.0-beta06"
 androidx-compose-ui-tooling-preview-core = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-core" }
 androidx-core-animation = "androidx.core:core-animation:1.0.0-rc01"
 # For using ShortcutManagerCompat to donate shortcuts to be used by Google
 androidx-core-google-shortcuts = "androidx.core:core-google-shortcuts:1.1.0"
 androidx-core-ktx-edge = "androidx.core:core-ktx:1.12.0-beta01"
-androidx-core-ktx-stable = "androidx.core:core-ktx:1.14.0-alpha01"
+androidx-core-ktx-stable = "androidx.core:core-ktx:1.15.0-alpha01"
 androidx-core-role = "androidx.core:core-role:1.0.0"
 # APIs for SplashScreen, including compatibility helpers on devices prior Android 12
 androidx-core-splashscreen-edge = "androidx.core:core-splashscreen:1.1.0-alpha01"
@@ -116,22 +116,22 @@ androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", vers
 # To use the Games Activity library
 androidx-games-activity = { module = "androidx.games:games-activity", version.ref = "games" }
 # To use the Games Controller Library
-androidx-games-controller = "androidx.games:games-controller:2.0.1"
+androidx-games-controller = "androidx.games:games-controller:2.0.2"
 # To use the Android Frame Pacing library
-androidx-games-frame-pacing = "androidx.games:games-frame-pacing:2.1.0"
+androidx-games-frame-pacing = "androidx.games:games-frame-pacing:2.1.2"
 # To use the Android Performance Tuner
 androidx-games-performance-tuner = "androidx.games:games-performance-tuner:1.6.0"
 # To use the Games Text Input Library
 # Do not include this if games-activity has been included
-androidx-games-text-input = { module = "androidx.games:games-text-input", version.ref = "games" }
+androidx-games-text-input = "androidx.games:games-text-input:3.0.3"
 androidx-graphics-core = { module = "androidx.graphics:graphics-core", version.ref = "androidx-graphics" }
 androidx-graphics-path = { module = "androidx.graphics:graphics-path", version.ref = "androidx-graphics" }
-androidx-graphics-shapes = "androidx.graphics:graphics-shapes:1.0.0-beta01"
+androidx-graphics-shapes = { module = "androidx.graphics:graphics-shapes", version.ref = "androidx-graphics" }
 androidx-input-motionprediction = "androidx.input:input-motionprediction:1.0.0-beta04"
 androidx-interpolator = "androidx.interpolator:interpolator:1.0.0"
 androidx-fragment-core = { module = "androidx.fragment:fragment", version.ref = "androidx-fragment" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "androidx-fragment" }
-androidx-fragment-testing = "androidx.fragment:fragment-testing:1.8.0-beta01"
+androidx-fragment-testing = "androidx.fragment:fragment-testing:1.8.0-rc01"
 androidx-javascriptengine = "androidx.javascriptengine:javascriptengine:1.0.0-beta01"
 androidx-leanback-core = { module = "androidx.leanback:leanback", version.ref = "leanback" }
 androidx-leanback-paging = "androidx.leanback:leanback-paging:1.1.0-alpha11"
@@ -195,16 +195,16 @@ androidx-test-junit-core = { module = "androidx.test.ext:junit", version.ref = "
 androidx-test-junit-ktx = { module = "androidx.test.ext:junit-ktx", version.ref = "test-junit" }
 androidx-test-ktx = { module = "androidx.test:core-ktx", version.ref = "test-core" }
 # (androidTestUtil) To use android test orchestrator
-androidx-test-orchestrator = "androidx.test:orchestrator:1.4.2"
+androidx-test-orchestrator = "androidx.test:orchestrator:1.5.0"
 # (androidTestImplementation) To use the androidx.test.runner APIs
-androidx-test-runner = "androidx.test:runner:1.5.2"
-androidx-test-truth = "androidx.test.ext:truth:1.5.0"
-androidx-test-uiautomator = "androidx.test.uiautomator:uiautomator:2.3.0-rc01"
+androidx-test-runner = { module = "androidx.test:runner", version.ref = "test-core" }
+androidx-test-truth = "androidx.test.ext:truth:1.6.0"
+androidx-test-uiautomator = "androidx.test.uiautomator:uiautomator:2.4.0-alpha01"
 androidx-textclassifier = "androidx.textclassifier:textclassifier:1.0.0-alpha04"
 androidx-transition-core = { module = "androidx.transition:transition-ktx", version.ref = "androidx-transition" }
 androidx-transition-ktx = { module = "androidx.transition:transition-ktx", version.ref = "androidx-transition" }
 androidx-tv-compose-foundation = { module = "androidx.tv:tv-material", version.ref = "tv-compose" }
-androidx-tv-compose-material = "androidx.tv:tv-foundation:1.0.0-alpha10"
+androidx-tv-compose-material = "androidx.tv:tv-foundation:1.0.0-alpha11"
 androidx-tv-provider = { module = "androidx.tvprovider:tvprovider", version.ref = "tv-provider" }
 androidx-tv-recommendation = "androidx.recommendation:recommendation:1.0.0"
 androidx-vectordrawable-animated = { module = "androidx.vectordrawable:vectordrawable-animated", version.ref = "vectordrawable" }

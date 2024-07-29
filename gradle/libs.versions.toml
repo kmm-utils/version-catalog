@@ -2,15 +2,15 @@
 # Google TV
 glide = "4.16.0"
 # Plugins
-gradle-android-plugin = "8.4.1"
-gradle-enterprise = "3.17.4"
+gradle-android-plugin = "8.5.1"
+gradle-enterprise = "3.17.6"
 # Testing
 junit = "4.13.2"
-ktor = "2.3.11"
+ktor = "2.3.12"
 log4j = "2.23.1"
 retrofit = "2.11.0"
 version-catalog-update = "0.8.4"
-com-squareup-wire = "4.9.9"
+com-squareup-wire = "5.0.0"
 
 [libraries]
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }

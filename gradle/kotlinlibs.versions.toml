@@ -16,15 +16,15 @@ kotlinx-datetime = "0.6.0"
 kotlinx-deeplearning-api = "0.5.2"
 kotlinx-html = "0.11.0"
 kotlinx-html-common = "0.7.3"
-kotlinx-io = "0.3.5"
+kotlinx-io = "0.5.1"
 kotlinx-io-platforms = "0.1.16"
 kotlinx-multik = "0.2.3"
 kotlinx-multik-api = "0.1.1"
-kotlinx-serialization = "1.6.3"
+kotlinx-serialization = "1.7.1"
 kotlinx-serialization-runtime = "0.20.0"
 msg-pack = "0.5.5"
 # Third-party libraries versions
-xmlutil = "0.86.3"
+xmlutil = "0.90.1"
 yamlkt = "0.13.0"
 
 [libraries]

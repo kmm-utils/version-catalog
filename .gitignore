@@ -22,7 +22,6 @@ gradle-app.setting
 .classpath
 
 *.iml
-.gradle
 .DS_Store
 build
 captures
@@ -30,3 +29,4 @@ captures
 .cxx
 local.properties
 /.idea/migrations.xml
+/.idea/other.xml
