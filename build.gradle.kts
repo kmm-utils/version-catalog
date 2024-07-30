@@ -21,7 +21,7 @@ plugins {
 }
 
 group = "kmm.utils"
-version = "0.7"
+version = "0.8"
 
 publishing {
     val envFile = file(".env")

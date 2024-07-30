@@ -6,6 +6,7 @@ csv = "0.0.18"
 jetbrains-kotlin-jvm = "2.0.0"
 # Plugins
 kotlin-plugin = "2.0.0"
+compose-multiplatform="1.6.10"
 kotlinx-cli = "0.3.6"
 kotlinx-collections-immutable = "0.3.7"
 kotlinx-coroutines = "1.8.1"
@@ -192,7 +193,8 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin-plugin" }
 kotlin-scripting = { id = "org.jetbrains.kotlin.plugin.scripting", version.ref = "kotlin-plugin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-plugin" }
-kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin-plugin" }
+compose-multiplatform = { id="org.jetbrains.compose", version.ref="compose-multiplatform" }
 
 [bundles]
 kotlinx-coroutines = [
