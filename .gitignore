@@ -2,6 +2,15 @@
 **/build/
 !src/**/build/
 
+*.iml
+.kotlin
+.gradle
+.idea
+.env
+.externalNativeBuild
+.cxx
+.DS_Store
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -21,12 +30,21 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-*.iml
-.DS_Store
-build
 captures
-.externalNativeBuild
-.cxx
 local.properties
-/.idea/migrations.xml
-/.idea/other.xml
+
+**/build/
+!src/**/build/
+
+xcuserdata
+XcodeApps/**/Pods
+XcodeApps/Pods
+XcodeApps/XcodeApps.xcworkspace
+XcodeApps/DerivedData/
+
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings

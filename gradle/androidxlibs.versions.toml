@@ -257,7 +257,6 @@ google-material = { module = "com.google.android.material:material", version.ref
 google-play-services-wearable = { module = "com.google.android.gms:play-services-wearable", version.ref = "play-services-wearable" }
 
 [plugins]
-jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "jetbrains-compose-plugin" }
 
 [bundles]
 androidx-fragment = [
